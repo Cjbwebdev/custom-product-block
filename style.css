@@ -1,0 +1,97 @@
+/* For desktops: */
+.product-block {
+    padding: 30px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: 30%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Price styling */
+.product-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 10px;
+}
+
+.product-item .price span {
+    font-size: 1.1em;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .product-block {
+        padding: 20px;
+    }
+
+    .product-list {
+        display: block;
+    }
+
+    .product-item {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .product-item img {
+        height: 150px;
+    }
+
+    .product-item h3 {
+        font-size: 1.2em;
+    }
+}
