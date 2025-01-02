@@ -24,7 +24,7 @@ registerBlockType('custom/product-block', {
                 try {
                     const response = await fetch('/wc/v2/products', {
                         headers: {
-                            'Authorization': `Basic ${btoa('ck_b480d7d64dc072b5fcdd83dee2b061204507511e:cs_your_consumer_secret')}`,
+                            'Authorization': `Basic ${btoa('ck_63ae170aa87b5ef28df232782d0b169f8dfc8a0c:cs_fe74641f25cb1d51dfa2f32618a2ebe3b25a6744')}`,
                             'Content-Type': 'application/json',
                         },
                     });
